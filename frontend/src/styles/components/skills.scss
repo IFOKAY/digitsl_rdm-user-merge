@@ -1,0 +1,129 @@
+@use '../variables' as *;
+
+/* Global full height for root elements */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-container {
+  padding: $spacing-05;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: white;
+
+  scrollbar-width: thin;
+  scrollbar-color: $blue-60 $gray-20;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $gray-20;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue-60;
+    border-radius: 4px;
+  }
+
+  .skills-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    padding: $spacing-05 0;
+    margin-bottom: $spacing-06;
+    border-bottom: 1px solid $gray-20;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+  .skills-section {
+    margin-bottom: $spacing-06;
+
+    // ✅ Center-align action cell
+    td:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: $spacing-07;
+
+    th {
+      background-color: $gray-10;
+      font-weight: 600;
+      text-align: left;
+      padding: $spacing-05;
+      border-bottom: 1px solid $gray-30;
+    }
+
+    td {
+      padding: $spacing-05;
+      border-bottom: 1px solid $gray-20;
+    }
+
+    tr:hover {
+      background-color: $blue-10;
+    }
+  }
+
+  .skills-actions {
+    margin-top: $spacing-06;
+    padding-bottom: $spacing-06;
+    padding-left: $spacing-15;
+
+    .add-button {
+      background-color: $blue-60;
+      color: white;
+      padding: $spacing-04 $spacing-05;
+      border: none;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $blue-70;
+      }
+    }
+  }
+
+  .submit-button {
+    background-color: #24a148;
+    color: white;
+    padding: $spacing-04 $spacing-05;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #198038;
+    }
+  }
+
+  .back-button {
+    padding: $spacing-04 $spacing-05;
+    background-color: transparent;
+    border: 1px solid $gray-50;
+    border-radius: 4px;
+    margin-right: $spacing-05;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray-10;
+    }
+  }
+}

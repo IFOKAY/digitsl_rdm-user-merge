@@ -1,0 +1,164 @@
+/* ProfilePage.scss */
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #fff;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  position: relative;
+}
+
+.profile-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+  color: #161616;
+}
+
+.spacer {
+  width: 80px; /* Balances the layout visually with header-right */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ibm-logo {
+  height: 24px;
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  flex-grow: 1;
+  margin-top: 2rem;
+}
+
+.profile-photo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: 1rem;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0f62fe;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #0f62fe;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-info-card {
+  flex: 1;
+  max-width: 600px;
+  border: 1px solid #e0e0e0;
+  padding: 2.5rem;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+}
+
+.user-info-card h5 {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: #161616;
+  border-bottom: 2px solid #0f62fe;
+  padding-bottom: 0.5rem;
+}
+
+.info-field {
+  display: flex;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.info-field label {
+  font-weight: 600;
+  color: #393939;
+  min-width: 100px;
+}
+
+.info-field span {
+  color: #0f62fe;
+  font-weight: 500;
+  flex: 1;
+}
+
+.skills-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.skill-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skills-button {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  color: #525252;
+  font-size: 0.875rem;
+  margin-top: auto;
+}

@@ -1,0 +1,80 @@
+@use '../variables' as *;
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $gray-10;
+  
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border: 1px solid $gray-20;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: $spacing-07;
+    margin: $spacing-05;
+    
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: $spacing-05;
+    }
+    
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $gray-70;
+      margin-bottom: $spacing-06;
+    }
+    
+    .form-item {
+      margin-bottom: $spacing-05;
+    }
+    
+    .remember-me {
+      margin: $spacing-05 0;
+    }
+    
+    .login-button {
+      margin-top: $spacing-05;
+      width: 100%;
+    }
+    
+    .divider {
+      height: 1px;
+      background-color: $gray-20;
+      margin: $spacing-06 0;
+    }
+    
+    .alternate-login {
+      color: $blue-60;
+      font-size: 0.875rem;
+      text-align: center;
+      cursor: pointer;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    .info-text {
+      font-size: 0.75rem;
+      color: $gray-60;
+      margin-top: $spacing-05;
+    }
+  }
+  
+  .ibm-logo-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: $spacing-05;
+    
+    img {
+      height: 24px;
+    }
+  }
+}

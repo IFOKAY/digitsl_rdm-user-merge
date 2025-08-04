@@ -1,0 +1,105 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.profile-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile-section {
+  background: white;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Header styles */
+.cds--header {
+  background-color: #000000;
+  color: white;
+}
+
+.cds--header__name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Content area */
+.cds--content {
+  background-color: #f4f4f4;
+  min-height: calc(100vh - 48px);
+}
+
+/* Table styles */
+.cds--data-table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.cds--data-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+/* Form styles */
+.cds--form-item {
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+.cds--btn {
+  margin-right: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+}

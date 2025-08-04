@@ -1,0 +1,79 @@
+@use '@carbon/styles/scss/config' with (
+  $use-flexbox-grid: true
+);
+
+// Import Carbon styles
+@use '@carbon/styles/scss/components/button';
+@use '@carbon/styles/scss/components/checkbox';
+@use '@carbon/styles/scss/components/data-table';
+@use '@carbon/styles/scss/components/form';
+@use '@carbon/styles/scss/components/link';
+@use '@carbon/styles/scss/components/modal';
+@use '@carbon/styles/scss/components/notification';
+@use '@carbon/styles/scss/components/text-input';
+@use '@carbon/styles/scss/components/tile';
+@use '@carbon/styles/scss/components/ui-shell';
+
+// Custom styles
+@use './variables';
+@use './components/login';
+@use './components/profile';
+@use './components/skills';
+
+// Global styles
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #161616;
+}
+
+.ibm-logo {
+  height: 32px;
+  margin: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+  
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Layout utilities
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}

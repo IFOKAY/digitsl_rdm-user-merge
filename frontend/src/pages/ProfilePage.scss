@@ -1,0 +1,56 @@
+.rejection-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.rejection-modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  min-width: 350px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.rejection-modal h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #da1e28;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.rejection-textarea {
+  width: 100%;
+  min-height: 80px;
+  border: 1.5px solid #fa4d56;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  resize: vertical;
+}
+
+.rejection-error {
+  color: #fa4d56;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.rejection-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+} 

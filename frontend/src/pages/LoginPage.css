@@ -1,0 +1,134 @@
+/* Global */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #f4f4f4;
+}
+
+/* Page wrapper */
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+  height: 60px; /* Fixed height to keep top bar same size */
+}
+
+/* Title in top bar */
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* IBM logo wrapper */
+.ibm-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* IBM logo image bigger */
+.ibm-logo-image {
+  height: 70px; /* Increased from 50px */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Main body */
+.login-body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* Login panel */
+.login-panel {
+  background: #fff;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Headings */
+.main-heading {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #161616;
+}
+
+.sub-heading {
+  color: #393939;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Forgot password */
+.forgot-password {
+  font-size: 0.875rem;
+  color: #0f62fe;
+  text-decoration: none;
+  margin-top: -1rem;
+}
+
+/* Sign-in button */
+.signin-btn {
+  background: #0f62fe;
+  color: white;
+  font-weight: 600;
+}
+
+/* Divider line */
+.divider {
+  margin: 2rem 0 1rem;
+  border-top: 1px solid #ccc;
+}
+
+/* Alternate sign-in section */
+.alternate-signin p {
+  font-size: 0.875rem;
+  color: #5a5a5a;
+  margin: 0.25rem 0;
+}
+
+.alternate-signin a {
+  color: #0f62fe;
+  text-decoration: none;
+}

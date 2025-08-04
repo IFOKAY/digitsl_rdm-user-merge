@@ -1,0 +1,68 @@
+@use '../variables' as *;
+
+.profile-container {
+  padding: $spacing-05;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  
+  .profile-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    padding: $spacing-05 0;
+    margin-bottom: $spacing-06;
+    border-bottom: 1px solid $gray-20;
+    
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+  
+  .profile-table {
+    width: 100%;
+    margin-bottom: $spacing-07;
+    
+    th {
+      background-color: $gray-10;
+      font-weight: 600;
+      text-align: left;
+      padding: $spacing-05;
+    }
+    
+    td {
+      padding: $spacing-05;
+      border-bottom: 1px solid $gray-20;
+    }
+  }
+  
+  .profile-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: $spacing-05;
+    margin-top: $spacing-06;
+    padding-bottom: $spacing-06;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: $spacing-02 $spacing-03;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    
+    &.certified {
+      background-color: $green-60;
+      color: white;
+    }
+    
+    &.pending {
+      background-color: $yellow-30;
+      color: $gray-100;
+    }
+  }
+}
